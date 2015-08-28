@@ -50,7 +50,7 @@ $(document).ready(function(){
       alert("Your message is queued and will be sent when the market closes")
       window.setInterval(function(){ // Set interval for checking
         var date = new Date(); // Create a Date object to find out what time it is
-        if(date.getHours() === 10 && date.getMinutes() === 00){ // Check the time
+        if(date.getHours() === 4 && date.getMinutes() === 00){ // Check the time
           $.ajax(settings).done(function (response) {
             console.log(response);
           });
