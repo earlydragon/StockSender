@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Stock Sender</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+</head>
+<body>
+
+	<h1>Stock Quote Sender</h1>
+
+
+  <form class="form-inline">
+	  &nbsp; <input type="text" id = "keyword" class="form-control" placeholder = "Enter a Symbol">&nbsp;
+	  <button type="button" id="search" class="btn btn-default" type="submit">Select</button>
+    <text id="feed"></text>
+  </form>
+    <p>
+    </p>
+  <form class="form-inline">
+    &nbsp; <input type="text" id = "number" class="form-control" placeholder = "Enter a Phone Number">&nbsp;
+           <input type="radio" name="Send" id="Now"> Now
+           <input type="radio" name="Send" id="Later"> Later
+	  <button type="button" id="send" class="btn btn-default" type="submit">Send</button>
+  </form>
+
+
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="StockSender.js"></script>
+</body>
+</html>
